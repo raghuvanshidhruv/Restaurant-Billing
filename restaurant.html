@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="restaurant.css">
+    <script src="restaurant.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Restaurant Billing System</h1>
+    </header>
+    <main>
+        <section id="menu-section">
+            <h2>Menu</h2>
+            <div id="menu-items">
+                <!-- Menu items will be dynamically generated here -->
+            </div>
+        </section>
+        <section id="order-section">
+            <h2>Order</h2>
+            <table id="order-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-items">
+                    <!-- Orders will be dynamically generated here -->
+                </tbody>
+            </table>
+            <div id="total-amount">
+                <strong>Total: $<span id="total-price">0.00</span></strong>
+            </div>
+            <button id="checkout-button">Checkout</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Billing System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
